@@ -1,0 +1,17 @@
+symbols:
+  version: 1.0.0
+  css:
+    base:
+      css/material-symbols.css: { weight: -100 }
+
+icons:
+  version: 1.0.0
+  css:
+    base:
+      css/material-icons.css: { weight: -100 }
+
+all:
+  version: 1.0.0
+  dependencies:
+    - native_material/symbols
+    - native_material/icons

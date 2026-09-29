@@ -1,0 +1,6 @@
+name: 'Native Material'
+type: module
+description: 'Provides locally hosted fonts and styles for Google Material Icons and Material Symbols with zero FOUT and native preload.'
+package: DropSense
+core_version_requirement: ^10 || ^11 || ^12
+version: 1.0.0

@@ -1,0 +1,16 @@
+{
+  "name": "javierms/native_material",
+  "description": "Google Material Symbols Outlined and Material Icons fonts hosted 100% locally with zero-FOUT optimization and native HTML head preloading.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "JavierMS",
+      "role": "Maintainer"
+    }
+  ],
+  "keywords": ["drupal", "material symbols", "material icons", "fonts", "local", "privacy", "gdpr"],
+  "require": {
+    "drupal/core": "^10 || ^11 || ^12"
+  }
+}

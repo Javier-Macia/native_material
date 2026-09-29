@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Native Material module.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function native_material_page_attachments(array &$page) {
+  $module_path = \Drupal::service('extension.list.module')->getPath('native_material');
+  $base_path = base_path();
+
+  // Preload Material Symbols Outlined font to prioritize download and eliminate FOUT.
+  $page['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'preload',
+        'href' => $base_path . $module_path . '/fonts/MaterialSymbolsOutlined.woff2',
+        'as' => 'font',
+        'type' => 'font/woff2',
+        'crossorigin' => 'anonymous',
+      ],
+    ],
+    'preload_material_symbols_woff2',
+  ];
+}
